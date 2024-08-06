@@ -35,8 +35,6 @@ const Contact = () => {
 
     const turnRed = (event) => {
 
-      event.preventDefault();
-
     const emptyFields = [];
     if (!formDataName) emptyFields.push("Name");
     if (!formDataEmail) emptyFields.push("Email");
