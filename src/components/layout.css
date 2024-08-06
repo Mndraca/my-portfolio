@@ -1,42 +1,3 @@
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-
-  .hamburger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-  }
-
-#about {
-    padding: 20px;
-    background-color: pink;
-  }
-  
- 
-#projects {
-    padding: 20px;
-  }
-  
   .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -45,14 +6,10 @@ header {
   .project {
     flex: 1;
     margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 20px;
+    border: 2px solid pink 
   }
 
-#contact {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
   
   form div {
     margin-bottom: 10px;
@@ -63,75 +20,17 @@ header {
       margin-left: 20%;
       
     }
-
-    nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      
-     
-    }
-
-    ul {
-      margin-top: 13%;
-    
-    }
-    button {
-      margin-bottom: 3%;
-    }
     footer {
-      background-color: #333;
-      color: #fff;
+      color: #000;
+      margin-top: 10px;
+      border-top: 2px dashed lightgrey;
       text-align: center;
-      padding: 20px 0;
       position: relative;
       bottom: 0;
       width: 100%;
     }
-    
-    footer p {
-      margin: 5px 0;
-    }
-    
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    
 
     @media (max-width: 600px) {
-      header nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-      }
-    
-      .nav-links.open {
-        display: flex;
-      }
-    
-      header nav ul li {
-        margin: 10px 0;
-      }
-    
-      .hamburger {
-        display: block;
-        margin-left: 45%;
-        margin-bottom: 5%;
-      }
-      nav {
-        display: block;
-      }
-       
-      img {
-        margin-left: 0%;
-      }
-
       .project-list {
         display: flex;
         flex-direction: column;
