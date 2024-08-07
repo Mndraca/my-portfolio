@@ -32,6 +32,7 @@ const Contact: FC = () => {
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
     const emptyFields = validateFields();
     if (emptyFields.length > 0) {
       alert(`Please fill up empty fields: ${emptyFields.join(", ")}`);

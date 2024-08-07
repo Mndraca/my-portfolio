@@ -31,7 +31,7 @@ const Navbar: FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#ffffff] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between justify-content space-evenly ml-0 mr-0 p-8 pt-8">
+      <div className="flex items-center justify-evenly p-8">
         <h1 className="flex text-4xl">Milena</h1>
         <div className="mobile-menu block sm:hidden">
           {!navbarOpen ? (
