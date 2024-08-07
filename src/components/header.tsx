@@ -5,6 +5,7 @@ import Navlink from "./Navlink";
 import MenuOverlay from "./MenuOverlay";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import MilenaLogo from "../assets/MilenaLogo.mp4";
 
 interface navLinkProps {
   title: string;
@@ -32,7 +33,15 @@ const Navbar: FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#ffffff] bg-opacity-100">
       <div className="flex items-center justify-evenly p-8">
-        <h1 className="flex text-4xl">Milena</h1>
+        <div className="relative h-40 w-40">
+          <video
+            className="absolute inset-0 w-full h-full object-cover rounded-full"
+            src={MilenaLogo}
+            autoPlay
+            loop
+            muted
+          />
+        </div>
         <div className="mobile-menu block sm:hidden">
           {!navbarOpen ? (
             <button
@@ -50,8 +59,8 @@ const Navbar: FC = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden sm:block sm:w-auto" id="navbar">
-          <ul className="flex p-4 sm:p-0 sm:flex-row sm:space-x-8 ">
+        <div className="menu hidden sm:flex sm:w-auto" id="navbar">
+          <ul className="flex space-x-8">
             {navLinks.map((link, index: number) => (
               <li key={index}>
                 <Navlink href={link.path} title={link.title} />
@@ -60,7 +69,7 @@ const Navbar: FC = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
   );
 };
