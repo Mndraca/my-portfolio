@@ -19,7 +19,7 @@ const About: FC = () => {
         />
       </div>
       <div className="relative z-10">
-        <h2 className="text-6xl mb-4">Hello!</h2>
+        <h2 className="text-4xl mb-4">Welcome!</h2>
         <p>
           My name is Milena Komnenic. My interests are in Front End Engineering,
           and I love to create beautiful and performant products with delightful
