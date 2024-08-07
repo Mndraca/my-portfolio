@@ -5,6 +5,7 @@ import Button from "./button";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import BookingCalendar from "./calendar";
 
 const Contact: FC = () => {
   const [formDataName, setFormDataName] = useState<string>("");
@@ -93,6 +94,9 @@ const Contact: FC = () => {
                 <FaXTwitter className="md:mb-3 md:mt-3 h-5 w-5" />
               </i>
             </a>
+          </div>
+          <div>
+            <BookingCalendar />
           </div>
         </div>
         <form onSubmit={handleSubmit}>
