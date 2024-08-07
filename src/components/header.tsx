@@ -31,8 +31,8 @@ const Navbar: FC = () => {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#ffffff] bg-opacity-100">
-      <div className="flex items-center justify-evenly p-8">
+    <nav className="fixed top-0 left-0 right-0 z-30 bg-[#ffffff] bg-opacity-100 shadow-md">
+      <div className="flex items-center justify-evenly p-4">
         <div className="relative h-40 w-40">
           <video
             className="absolute inset-0 w-full h-full object-cover rounded-full"
