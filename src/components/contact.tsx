@@ -67,7 +67,10 @@ const Contact: FC = () => {
 
   return (
     <>
-      <section className="grid md:grid-cols-2 md:mt-12 py-20 gap-4 bg-pink-200 border rounded p-8 mt-10">
+      <section
+        className="grid md:grid-cols-2 md:mt-12 py-20 gap-4 bg-pink-200 border rounded p-12 mt-10"
+        style={{ backgroundImage: "linear-gradient(pink, white, pink)" }}
+      >
         <div>
           <h5 className="text-xl font-bold text-black my-2">Let's Connect.</h5>
           <div className="max-w-20 flex flex-row justify-between md:flex-col align-center">

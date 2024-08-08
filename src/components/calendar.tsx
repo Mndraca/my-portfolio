@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const BookingCalendar: React.FC = () => {
+  useEffect(() => {
+    // Create and append the link tag for the CSS
+    const link = document.createElement("link");
+    link.href = "https://assets.calendly.com/assets/external/widget.css";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+
+    // Create and append the script tag for the JavaScript
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Cleanup the added elements on component unmount
+    return () => {
+      document.head.removeChild(link);
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div>
-      <h2>Book a Meeting</h2>
       <div
         dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://calendly.com/marizanovic3/30min" width="100%" height="600" frameBorder="0" style="border:0; padding:0;"></iframe>`,
+          __html: `<a href="" style="color: red;"  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marizanovic3/30min'});return false;">Schedule your meeting here.</a>`,
         }}
       />
     </div>
