@@ -12,6 +12,7 @@ const Contact: FC = () => {
   const [formDataName, setFormDataName] = useState<string>("");
   const [formDataEmail, setFormDataEmail] = useState<string>("");
   const [formDataMessage, setFormDataMessage] = useState<string>("");
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
   const handleChangeName = (event: ChangeEvent<HTMLInputElement>) => {
     setFormDataName(event.target.value);
@@ -34,6 +35,7 @@ const Contact: FC = () => {
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
     const emptyFields = validateFields();
     if (emptyFields.length > 0) {
       alert(`Please fill up empty fields: ${emptyFields.join(", ")}`);
@@ -47,7 +49,7 @@ const Contact: FC = () => {
     };
 
     try {
-      const responce = await fetch(
+      const response = await fetch(
         "https://api.sheetmonkey.io/form/e2UUyfFHWbV41PXCduWivU",
         {
           method: "POST",
@@ -57,11 +59,12 @@ const Contact: FC = () => {
           body: JSON.stringify(data),
         }
       );
-      if (responce.ok) {
-        console.log("You did great!");
+      if (response.ok) {
+        setIsSubmitted(true);
+        alert("Your form is submitted!");
       }
     } catch (error) {
-      console.error("Your submission failed:", error);
+      console.error("");
     }
   };
 
@@ -105,14 +108,16 @@ const Contact: FC = () => {
             <Resume />
           </div>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div id="contact">
-            <Input name="name" handleChange={handleChangeName} />
-            <Input name="email" handleChange={handleChangeEmail} />
-            <Input name="message" handleChange={handleChangeMessage} />
-            <Button name="Submit" handleClick={handleSubmit} />
-          </div>
-        </form>
+        {!isSubmitted && (
+          <form onSubmit={handleSubmit}>
+            <div id="contact">
+              <Input name="name" handleChange={handleChangeName} />
+              <Input name="email" handleChange={handleChangeEmail} />
+              <Input name="message" handleChange={handleChangeMessage} />
+              <Button name="Submit" handleClick={handleSubmit} />
+            </div>
+          </form>
+        )}
       </section>
     </>
   );
