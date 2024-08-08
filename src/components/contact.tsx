@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import BookingCalendar from "./calendar";
+import Resume from "./resume";
 
 const Contact: FC = () => {
   const [formDataName, setFormDataName] = useState<string>("");
@@ -33,7 +34,6 @@ const Contact: FC = () => {
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
     const emptyFields = validateFields();
     if (emptyFields.length > 0) {
       alert(`Please fill up empty fields: ${emptyFields.join(", ")}`);
@@ -73,6 +73,9 @@ const Contact: FC = () => {
       >
         <div>
           <h5 className="text-xl font-bold text-black my-2">Let's Connect.</h5>
+          <div>
+            <BookingCalendar />
+          </div>
           <div className="max-w-20 flex flex-row justify-between md:flex-col align-center">
             <a
               href="https://github.com/Mndraca"
@@ -99,7 +102,7 @@ const Contact: FC = () => {
             </a>
           </div>
           <div>
-            <BookingCalendar />
+            <Resume />
           </div>
         </div>
         <form onSubmit={handleSubmit}>

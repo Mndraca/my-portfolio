@@ -27,6 +27,7 @@
       width: 100%;
     }
 
+
     @media (max-width: 600px) {
       .project-list {
         display: flex;
@@ -42,6 +43,7 @@
       margin: 10px 0;
     }
     }
-
+   
+    
   
     

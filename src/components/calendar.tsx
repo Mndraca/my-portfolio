@@ -22,7 +22,7 @@ const BookingCalendar: React.FC = () => {
     <div>
       <div
         dangerouslySetInnerHTML={{
-          __html: `<a href="" style="color: red;"  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marizanovic3/30min'});return false;">Schedule your meeting here.</a>`,
+          __html: `<a href="" style="color: red";  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marizanovic3/30min'});return false;">Schedule your meeting here.</a>`,
         }}
       />
     </div>
