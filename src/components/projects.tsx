@@ -4,8 +4,8 @@ import "./layout.css";
 
 const Projects: FC = () => {
   return (
-    <section id="projects" className="my-10 p-2 ">
-      <h2 className="text-5xl mr-4: margin-right text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-200 to-rose-500">
+    <section id="projects" className="my-10  ">
+      <h2 className="text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-200 to-rose-500">
         Projects
       </h2>
       <div className="project-list">
