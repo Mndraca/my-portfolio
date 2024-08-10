@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import React, { FC } from "react";
 import "./layout.css";
 
@@ -19,7 +18,16 @@ const Projects: FC = () => {
             href={"https://mndraca.github.io/BookReview-/"}
             target="_blank"
             className="text-pink-400"
-            style={{ textDecoration: "none" }}
+            style={{
+              textDecoration: "none",
+              padding: "6px 8px",
+              borderRadius: "4px",
+              backgroundColor: "#FF69B4",
+              color: "white",
+              fontWeight: "bold",
+              display: "inline-block",
+              marginTop: "8px",
+            }}
           >
             Look here
           </a>
@@ -56,7 +64,7 @@ const Projects: FC = () => {
           </a>
         </div>
         <div className="project">
-          <h3 className="font-bold text-xl mb-4">Multi-Function Web Tool</h3>
+          <h3 className="font-bold text-xl mb-4">Multi-Function Tool</h3>
           <p className="mb-4">
             The App can calculate and display the factorial of a number, reverse
             a given word, convert text to uppercase,looping constructs through a
