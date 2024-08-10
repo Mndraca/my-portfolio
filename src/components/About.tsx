@@ -19,8 +19,10 @@ const About: FC = () => {
         />
       </div>
       <div className="relative z-10">
-        <h2 className="text-4xl mb-4">Welcome!</h2>
-        <p>
+        <h2 className="text-4xl mb-4" style={{ fontWeight: "600" }}>
+          Welcome!
+        </h2>
+        <p style={{ fontWeight: "900" }}>
           My name is Milena Komnenic. My interests are in Front End Engineering,
           and I love to create beautiful and performant products with delightful
           user experiences. I like to code things from scratch, and enjoy
@@ -28,7 +30,7 @@ const About: FC = () => {
         </p>
         <a href="#contact">
           <button
-            className="border border-transparent bg-gradient-to-br from-rose-300 via-rose-400 to-rose-300 text-black w-full sm:w-1/2 rounded-full shadow-2xl shadow-rose-700 transition h-8 hover:opacity-75 mt-4 font-bold"
+            className="border border-transparent bg-gradient-to-br from-rose-300 via-rose-400 to-rose-300 text-black w-full sm:w-1/2 rounded-full shadow-2xl shadow-rose-700 transition h-12 hover:opacity-75 mt-4 font-bold"
             type="button"
           >
             Message Me!

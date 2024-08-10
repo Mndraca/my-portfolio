@@ -33,7 +33,7 @@ const Navbar: FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 bg-[#ffffff] bg-opacity-100 shadow-md">
       <div className="flex items-center justify-evenly p-4">
-        <div className="relative h-40 w-40">
+        <div className="relative h-32 w-40">
           <video
             className="absolute inset-0 w-full h-full object-cover rounded-full"
             src={MilenaLogo}
