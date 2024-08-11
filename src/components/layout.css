@@ -1,6 +1,7 @@
   .project-list {
     display: flex;
     flex-wrap: wrap;
+
   }
   
   .project {
@@ -45,6 +46,20 @@
     }
     }
    
+   
+
+
+
+    @media (min-width: 1000px) and (max-width: 1500px) {
+      .project a {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      
+      }
+    }
+    
+    
+
     
   
     
