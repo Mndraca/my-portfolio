@@ -6,7 +6,7 @@ const Resume: React.FC = () => {
       <a
         href="/resume.pdf"
         download="Milena_Komnenic_Resume.pdf"
-        className="bg-red-300 text-white py-1 px-2 rounded hover:bg-pink-400 block sm:inline-block"
+        className=" p-8 rounded-lg  border-2 border-pink-100 p-8 rounded-lg  bg-gradient-to-br from-rose-300 via-rose-400 to-rose-300  font-bold text-black py-2 px-3 mt-4 rounded hover:bg-pink-400 block sm:inline-block"
       >
         Download Resume
       </a>
