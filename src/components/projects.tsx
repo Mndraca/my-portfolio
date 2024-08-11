@@ -53,10 +53,9 @@ const Projects: FC = () => {
         </div>
         <div className="project">
           <h3 className="font-bold text-xl mb-4">Multi-Function Tool</h3>
-          <p className="mb-8">
+          <p className="mb-16">
             The App can calculate and display the factorial of a number, reverse
-            a given word, convert text to uppercase, looping constructs through
-            a sequence.
+            a given word, convert text to uppercase.
           </p>
           <a
             href={""}
