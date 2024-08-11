@@ -14,15 +14,21 @@ const Contact: FC = () => {
   const [formDataMessage, setFormDataMessage] = useState<string>("");
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
-  const handleChangeName = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeName = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormDataName(event.target.value);
   };
 
-  const handleChangeEmail = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeEmail = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormDataEmail(event.target.value);
   };
 
-  const handleChangeMessage = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeMessage = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormDataMessage(event.target.value);
   };
 
@@ -111,9 +117,21 @@ const Contact: FC = () => {
         {!isSubmitted && (
           <form onSubmit={handleSubmit}>
             <div id="contact">
-              <Input name="name" handleChange={handleChangeName} />
-              <Input name="email" handleChange={handleChangeEmail} />
-              <Input name="message" handleChange={handleChangeMessage} />
+              <Input
+                name="name"
+                placeholder="Enter your name"
+                handleChange={handleChangeName}
+              />
+              <Input
+                name="email"
+                placeholder="Enter your email"
+                handleChange={handleChangeEmail}
+              />
+              <Input
+                name="message"
+                placeholder="Enter your message"
+                handleChange={handleChangeMessage}
+              />
               <Button name="Submit" handleClick={handleSubmit} />
             </div>
           </form>
