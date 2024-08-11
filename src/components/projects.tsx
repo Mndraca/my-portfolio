@@ -17,7 +17,7 @@ const Projects: FC = () => {
           <a
             href={"https://mndraca.github.io/BookReview-/"}
             target="_blank"
-            className="inline-block text-white bg-black hover:bg-gray-800  py-1 px-2 rounded"
+            className="inline-block text-white bg-gradient-to-br from-gray-200 via-gray-400 to-gray-200 hover:bg-gray-800  py-1 px-2 rounded"
           >
             Look here
           </a>
@@ -32,7 +32,7 @@ const Projects: FC = () => {
           <a
             href={"https://sdzika.github.io/workout-logging-form/"}
             target="_blank"
-            className="inline-block text-white bg-black hover:bg-gray-800  py-1 px-2 rounded"
+            className="inline-block text-white bg-gradient-to-br from-gray-200 via-gray-400 to-gray-200 hover:bg-gray-800  py-1 px-2 rounded"
           >
             Look here
           </a>
@@ -46,7 +46,7 @@ const Projects: FC = () => {
           <a
             href={"https://mndraca.github.io/sitadini/"}
             target="_blank"
-            className="inline-block text-white bg-black hover:bg-gray-800  py-1 px-2 rounded"
+            className="inline-block text-white bg-gradient-to-br from-gray-200 via-gray-400 to-gray-200 hover:bg-gray-800  py-1 px-2 rounded"
           >
             Look here
           </a>
@@ -60,7 +60,7 @@ const Projects: FC = () => {
           <a
             href={""}
             target="_blank"
-            className="inline-block text-white bg-black hover:bg-gray-800 py-1 px-2 rounded"
+            className="inline-block text-white bg-gradient-to-br from-gray-200 via-gray-400 to-gray-200 hover:bg-gray-800 py-1 px-2 rounded"
           >
             Look here
           </a>
